@@ -5,4 +5,4 @@
 
 2.This website is completely responsive to all resolutions and platforms.
 
-3.To have a live demo, feel free to visit https://madhankumar-portfolio.netlify.app/
+3.To have a live demo, feel free to visit https://madhannmady.github.io/Responsive-Portfolio/
