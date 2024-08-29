@@ -492,7 +492,7 @@ img {
 }
 
 .skills__js {
-  width: 30%;
+  width: 20%;
 }
 
 .skills__react {
@@ -696,6 +696,7 @@ img {
 
 .portfolio__description {
   margin-bottom: var(--mb-0-75);
+  text-align: justify;
 }
 
 .portfolio__button:hover .button__icon {
@@ -758,8 +759,9 @@ img {
 }
 
 .project__img {
-  width: 232px;
+  width: 350px;
   justify-self: center;
+  margin-left: 2.5rem;
 }
 
 /*==================== CONTACT ME ====================*/
