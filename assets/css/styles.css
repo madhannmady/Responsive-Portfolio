@@ -390,7 +390,7 @@ img {
 }
 
 .button--link {
-  padding: 0;
+  padding: 1.2px 20px;
   background-color: transparent;
   color: var(--first-color);
 }
@@ -418,6 +418,9 @@ img {
 }
 
 /*==================== SKILLS ====================*/
+.skills__content {
+  padding-top: 1.25rem;
+}
 .skills__container {
   row-gap: 0;
 }
@@ -517,63 +520,144 @@ img {
   transform: rotate(-180deg);
 }
 /*==================== QUALIFICATION ====================*/
-.qualification__tabs {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
-}
 
-.qualification__button {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  cursor: pointer;
-}
-
-.qualification__button:hover {
-  color: var(--first-color);
-}
-
-.qualification__icon {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
-}
-
-.qualification__data {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  column-gap: 1.5rem;
+/* Breathing effect for qualification bullet points */
+@keyframes bulletBreathing {
+  0% {
+    transform: scale(1) translateY(-50%);
+    box-shadow: 0 0 0 transparent;
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2) translateY(-50%);
+    box-shadow: 0 0 10px var(--first-color);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(-50%);
+    box-shadow: 0 0 0 transparent;
+    opacity: 0.7;
+  }
 }
 
 .qualification__title {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  position: relative;
+  padding-left: 20px;
 }
 
-.qualification__subtitle {
-  display: inline-block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
-}
-
-.qualification__calender {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
-}
-
-.qualification__rounder {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
+.qualification__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
   background-color: var(--first-color);
   border-radius: 50%;
+  transform-origin: center;
+  animation: bulletBreathing 3s ease-in-out infinite;
 }
 
-.qualification__line {
+/* Main container for the toggle UI */
+.qualification__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mb-1);
+  margin-bottom: var(--mb-2);
+} /* Add spacing to qualification content */
+.qualification__sections {
+  padding: var(--mb-2) 0;
+}
+
+.qualification__content {
+  display: none;
+}
+
+.qualification__content-active {
   display: block;
-  width: 1px;
-  height: 100%;
+}
+
+/* Add vertical spacing between qualification items */
+.qualification__data {
+  margin-bottom: var(--mb-2-5);
+  padding: var(--mb-0-75) 0;
+} /* Styling for the icons on either side of the toggle */
+.qualification__toggle-icon {
+  font-size: 1.8rem;
+  color: var(--text-color-light);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Style for the currently active icon */
+.qualification__toggle-icon.active {
+  color: var(--first-color);
+}
+
+/* The switch container */
+.qualification__toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+/* Hide the default HTML checkbox */
+.qualification__toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The track of the toggle */
+.qualification__toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--first-color-lighter);
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+/* The sliding knob */
+.qualification__toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Styling for the 'on' state */
+.qualification__toggle-switch input:checked + .qualification__toggle-slider {
   background-color: var(--first-color);
-  transform: translate(6px, -7px);
+}
+
+/* Move the knob when the toggle is 'on' */
+.qualification__toggle-switch
+  input:checked
+  + .qualification__toggle-slider:before {
+  transform: translateX(24px);
+}
+
+/* These rules control which timeline is visible */
+.qualification__content {
+  display: none;
+}
+
+.qualification__content-active {
+  display: block;
+}
+
+.qualification__data {
 }
 
 /*==================== SERVICES ====================*/
@@ -772,6 +856,21 @@ img {
 .contact__information {
   display: flex;
   margin-bottom: var(--mb-2);
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact__link-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: rgba(71, 129, 255, 0.05);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(71, 129, 255, 0.1);
+  cursor: pointer;
 }
 
 .contact__icon {
@@ -788,6 +887,16 @@ img {
 .contact__subtitle {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+}
+
+.contact__link {
+  color: var(--text-color-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact__link:hover {
+  color: var(--first-color);
 }
 
 .contact__content {
@@ -1079,7 +1188,7 @@ img {
   }
 
   .about__description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .about__info {
