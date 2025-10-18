@@ -1,667 +1,845 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--==================== FAVICON ====================-->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Madhan Kumar</a>
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-info-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase nav__icon"></i> Hobbies
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Proejcts
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> ContactMe
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div>
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-                <div class="nav__btns">
-                       <!-- Theme change button -->
-                       <i class="uil uil-moon change-theme" id="theme-button"></i>
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="uil uil-apps"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
+    <title>Responsive Portfolio Website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Madhan Kumar</a>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
-                    <div class="home__content grid">
-                        <div class="home__social">
-                            <a href="https://www.linkedin.com/in/madhankumar-karthikeyan/" target="_blank" class="home__social-icon">
-                                <i class="uil uil-linkedin-alt"></i>
-                            </a>
-                            <a href="https://github.com/madhannmady/"  target="_blank" class="home__social-icon">
-                                <i class="uil uil-github-alt"></i>
-                            </a>
-                            <a href="https://dribbble.com/Madhannmady/"  target="_blank" class="home__social-icon">
-                                <i class="uil uil-dribbble"></i>
-                            </a>
-                        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-info-alt nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-briefcase nav__icon"></i> Hobbies
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i> Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> ContactMe
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
 
-                        <div class="home__img">
-                            <svg class="home__blob" viewBox= "0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/madhankumar-karthikeyan/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/madhannmady/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://dribbble.com/Madhannmady/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-dribbble"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                     130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                     97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x="12" y="18" href="assets/images/pic1.png"/>
-                                </g>
-                            </svg>
-                        </div>
-
-                        <div class="home__data">
-                            <h1 class="home__title">Hi, I'm Madhan</h1>
-                            <h3 class="home__subtitle">  Tech enthusiast</h3>
-                            <p class="home__description">I'm a frontend developer who's just getting started on this exciting journey. While I may be a beginner,
-                                 I'm driven by my love for design and my eagerness to create sleek and user-friendly interfaces.</p>
-                            <a href="#contact" class="button  button--flex">
-                                Contact Me <i class="uil uil-message button__icon"></i>
-                            </a>
-                        </div>
-                     </div>
-
-                     <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
-                 <span class="section__subtitle">Intro</span>
-
-                 <div class="about__container container grid">
-                    <img src="assets/images/pic3.png" alt="" class="about__img">
-
-                    <div class="about__data">
-                        <p class="about__description">I am currently pursuing a bachelor's degree in Computer Science, where I have developed a strong passion for frontend development, especially in UI/UX design. I take great joy in creating visually appealing interfaces, which not only fuels my 
-                            creativity but also keeps me energized and eager to learn more. As a newcomer to the field, my enthusiasm for continuous learning drives my growth and excitement in this ever-evolving domain.</p> 
-
-                        <div class="about__buttons">
-                            <a download=""  href="assets/pdf/Madhan_kumar_Resume.pdf" class="button button--flex">
-                                Download Resume<i class="uil uil-download-alt button__icon"></i>
-                            </a>                            
-                        </div>
-                    </div>
-                 </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                    <h2 class="section__title">Skills</h2>
-                    <span class="section__subtitle">My technical level</span>
-
-                    <div class="skills__container container grid">
-                        <div>
-                            <!--==================== SKILLS-1====================-->
-                            <div class="skills__content skills__open">
-                                <div class="skills__header">
-                                    <i class="uil uil-brackets-curly skills__icon"></i>
-
-                                    <div>
-                                        <h1 class="skills__title">Frontend developer</h1>
-                                        <span class="skills__subtitle">Beginner</span>
-                                    </div>
-
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-
-                                <div class="skills__list grid">
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills_name">HTML</h3>
-                                            <span class="skills__number">70%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__html"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills_name">css</h3>
-                                            <span class="skills__number">70%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__css"></span>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills_name">JavaScript</h3>
-                                            <span class="skills__number">20%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__js"></span>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills_name">React</h3>
-                                            <span class="skills__number">40%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__react"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                             <!--==================== SKILLS-2====================-->
-                            <div class="skills__content skills__close">
-                                <div class="skills__header">
-                                    <i class="uil uil-swatchbook skills__icon"></i>
-
-                                    <div>
-                                        <h1 class="skills__title">Designer</h1>
-                                        <span class="skills__subtitle">Newcomer</span>
-                                    </div>
-
-                                    <i class="uil uil-angle-down skills__arrow"></i>
-                                </div>
-
-                                <div class="skills__list grid">
-                                    <div class="skills__data">
-                                        <div class="skills__titles">
-                                            <h3 class="skills_name">Figma</h3>
-                                            <span class="skills__number">80%</span>
-                                        </div>
-                                        <div class="skills__bar">
-                                            <span class="skills__percentage skills__figma"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My Personal Joruney</span>
-
-                 <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex">
-                            <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-                    </div>
-                    <div class="qualification__sections">
-                        <!--==================== QUALIFICATION  CONTENT====================-->
-                        <div class="qualification__content">
-                            <!--==================== QUALIFICATION 1====================-->
-                            <div class="qualification__data ">
-                                <div>
-                                    <h3 class="qualificaion__title">SSLC</h3>
-                                    <span class="qualification__subtitle">Namakkal Teachers Vidyashram - Vellore</span>
-                                    <div class="qualification__calender">
-                                        <i class="uil uil-calendar-alt "></i>
-                                          2018-2019
-                                    </div>
-                                </div>
-
-                                <div>
-                                      <span class="qualification__rounder"></span>
-                                      <span class="qualification__line"></span>
-                                </div>
-                            </div>
-                        
-                             <!--==================== QUALIFICATION 2====================-->
-                             <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                              </div>
-
-                                <div>
-                                    <h3 class="qualificaion__title">HSC</h3>
-                                    <span class="qualification__subtitle">Sunbeam School - Vellore</span>
-                                    <div class="qualification__calender">
-                                        <i class="uil uil-calendar-alt "></i>
-                                          2020-2021
-                                    </div>
-                                </div>
-                            </div>
-
-                         <!--==================== QUALIFICATION 3====================-->
-                         <div class="qualification__data">
-                            <div>
-                                <h3 class="qualificaion__title">Bachelor's in Computer Science</h3>
-                                <span class="qualification__subtitle">Panimalar Institute of Technology - Chennai</span>
-                                <div class="qualification__calender">
-                                    <i class="uil uil-calendar-alt "></i>
-                                      2021-2025
-                                </div>
-                            </div>
-
-                            <div>
-                                  <span class="qualification__rounder"></span>
-                                  <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                 </div>
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                 <h2 class="section__title">Hobbies</h2>
-                 <span class="section__subtitle">What I do</span>
-
-                <div class="services__container container grid">
-                    <!--==================== SERVICES 1 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-web-grid services__icon"></i>
-                            <h3 class="services__title">UI/UX <br> design</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__model">
-                            <div class="services__model-content">
-                                <h4 class="services__model-title">UI/UX <br> design </h4>
-                                <i class="uil uil-times services__model-close"></i>
-
-                                <ul class="services__model-services grid">
-                                    <li class="services__model-service">
-                                        <i class="uil uil-check-circle services__model-icon"></i>
-                                        <p>I have a passion for creating visually appealing and user-friendly designs.</p>
-                                    </li>
-
-                                    <li class="services__model-service">
-                                        <i class="uil uil-check-circle services__model-icon"></i>
-                                        <p>I believe in putting the user's needs first to create intuitive and engaging interfaces.</p>
-                                    </li>
-                                
-                                    <li class="services__model-service">
-                                        <i class="uil uil-check-circle services__model-icon"></i>
-                                        <p>My creativity gives me a hand , eventhough I'm a beginner.</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== SERVICES 2 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-arrow services__icon"></i>
-                            <h3 class="services__title">Frontend<br> Developer</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__model">
-                            <div class="services__model-content">
-                                <h4 class="services__model-title">Frontend<br> Developer</h4>
-                                <i class="uil uil-times services__model-close"></i>
-
-                                <ul class="services__model-services grid">
-                                    <li class="services__model-service">
-                                        <i class="uil uil-check-circle services__model-icon"></i>
-                                        <p>Passionate about creating visually appealing and user-friendly websites.</p>
-                                    </li>
-
-                                    <li class="services__model-service">
-                                        <i class="uil uil-check-circle services__model-icon"></i>
-                                        <p>Keen interest in the latest frontend technologies and trends.</p>
-                                    </li>
-                                
-                                    <li class="services__model-service">
-                                        <i class="uil uil-check-circle services__model-icon"></i>
-                                        <p>Strong attention to detail and ability to work collaboratively in a team environment.</p>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">Most recent work</span>
-
-                 <!-- first portfolio -->
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-                         <!--==================== PORTFOLIO 1====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/images/portfolio1.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Yoom</h3>
-                                <p class="portfolio__description">Yoom is a clone mockup of a video calling application called zoom, where users can able to create instant meetings,even schedule meetings and more</p>
-                                <a href="https://ai-summarizer-mady.vercel.app/" class="button button--flex button--small portfolio__button">
-                                    Demo<i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <!--==================== PORTFOLIO 2====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/images/portfolio2.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">UI/UX Website</h3>
-                                <p class="portfolio__description">A simple anna university website to emphasize my UI/UX Skills , thanks to Aceternity ui</p>
-                                <a href="https://anna-university-simple.vercel.app/" class="button button--flex button--small portfolio__button">
-                                    Demo<i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 3====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/images/portfolio3.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Glisten AI</h3>
-                                <p class="portfolio__description">An UI/UX Design website with some cool animations ,developed using GSAP Library</p>
-                                <a href="https://glisten-mady.vercel.app/" class="button button--flex button--small portfolio__button">
-                                    Demo<i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                         </div>
-
-                         <!--==================== PORTFOLIO 4====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/images/portfolio4.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">AI-Summarizer</h3>
-                                <p class="portfolio__description">Sumz is an open-source article summarizer that
-                                    transforms lengthy "blah-blah" articles into clear and concise summaries.</p>
-                                <a href="https://glisten-mady.vercel.app/" class="button button--flex button--small portfolio__button">
-                                    Demo<i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                         </div>
-                        </div>
-
-                       <!-- Add Arrows -->
-                      <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                      </div>
-                      <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                      </div>
-                         
-                       <!-- Add Pagination -->
-                       <div class="swiper-pagination">
-
-                    </div>
-                </div>
-
-                <div  class="section__title" style="text-align: center; font-weight: bold; margin: 100px 0 30px;">
-                    UI Projects
-                </div>
-
-                <!-- second profile -->
-                <div class="portfolio__container container swiper-container" >
-                    <div class="swiper-wrapper">
-                         <!--==================== PORTFOLIO 1====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/images/p1.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Lions International</h3>
-                                <p class="portfolio__description">A bold and compassionate design that combines impactful visuals with dynamic layout, highlighting the organization's mission with striking clarity.</p>
-                                <a href="https://www.figma.com/design/MbKUMLHqM0T4hIjmAgNjgn/Lions-club-International?node-id=1-2&t=e2PV2QGRtIGVMGUr-1/" class="button button--flex button--small portfolio__button">
-                                    Demo<i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <!--==================== PORTFOLIO 2====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/images/p2.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Job Portal</h3>
-                                <p class="portfolio__description">A clean, modern interface with intuitive navigation, offering a seamless and engaging job search experience.</p>
-                                <a href="https://www.figma.com/design/N3LnxxK69WkvgMPicR0rZa/JapaneseJobDesign?node-id=3-3&t=AN3rlhQG8fPEkwKr-1/" class="button button--flex button--small portfolio__button">
-                                    Demo<i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!--==================== PORTFOLIO 3====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/images/p3.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">IRCTC Re-Work</h3>
-                                <p class="portfolio__description">A vibrant and user-friendly design that merges tradition with modernity, making the booking process straightforward and visually appealing.</p>
-                                <a href="https://www.figma.com/design/RqP0JTkJze7Mez4CEJs9yk/IRCTC-Re-Design?node-id=3-3&t=r8Eyj2NYJqEuY9jk-1/" class="button button--flex button--small portfolio__button">
-                                    Demo<i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                         </div>
-
-                         <!--==================== PORTFOLIO 4====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/images/p4.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Wanderlust Trips</h3>
-                                <p class="portfolio__description">A vibrant and immersive design that seamlessly blends adventure with functionality, inviting users to explore with intuitive navigation and visually captivating elements.</p>
-                                <a href="https://www.figma.com/design/OsQclE5WZPOU0Q6LBBIpk2/Wanderlust-Trips?node-id=0-1&t=4PdllvdkiBhEK7an-1/" class="button button--flex button--small portfolio__button">
-                                    Demo<i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                         </div>
-                        </div>
-
-                       <!-- Add Arrows -->
-                      <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                      </div>
-                      <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                      </div>
-                         
-                       <!-- Add Pagination -->
-                       <div class="swiper-pagination">
-
-                    </div>
-                </div>
-
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-                <div class="project__bg">
-                    <div class="project__container container grid">
-                        <div class="project__data">
-                            <h2 class="project__title">Let us learn together</h2>
-                            <p class="project__description">I really believe that when we learn and work together as a team, we all gain so much more. So, if you ever have any ideas or just want to chat, feel free to reach out! I'm always up for sharing thoughts and learning from each other.</p>
-                            <a href="#contact" class="button button--flex button--white">
-                                Contact Me 
-                                <i class="uil uil-message project__icon button__icon"></i>
-                            </a>
-                        </div>
-
-                        <img src="assets/images/pic2.png" alt="" class="project__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                    <h2 class="section__title">Contact Me</h2>
-                    <span class="section__subtitle">Get in touch</span>
-
-                    <div class="contact__container container grid">
-                        <div>
-                            <div class="contact__information">
-                                <i class="uil uil-phone contact__icon"></i>
-
-                                <div>
-                                    <h3 class="contact__title">Call Me</h3>
-                                    <span class="contact__subtitle">+91 8610623230</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="contact__information">
-                                <i class="uil uil-envelope contact__icon"></i>
-
-                                <div>
-                                    <h3 class="contact__title">Email</h3>
-                                    <span class="contact__subtitle">madhankumark763@gmail.com<span>
-                                </div>
-                            </div>
-                         </div>
-
-                         <div>
-                            <div class="contact__information">
-                                <i class="uil uil-map-marker contact__icon"></i>
-
-                                <div>
-                                    <h3 class="contact__title">Location</h3>
-                                    <span class="contact__subtitle">Chennai - Guduvanchery</span>
-                                </div>
-                            </div>
-                         </div>
-
-                         <form action="" class="contact__form grid">
-                                <div>
-                                    <a href=" https://wa.me/8610623230" class="contact__icon-new button--flex">
-                                        WhatsApp
-                                        <i class="uil uil-whatsapp button__icon"></i>
-                                    </a>
-                                </div>
-                         </form>
-                    </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-             <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Madhan Kumar</h1>
-                        <span class="footer__subtitle">  &nbsp Tech enthusiast</span>
-                    </div>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#services" class="footer__link">Services</a>
-                        </li>
-    
-                        <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li>
-    
-                        <li>
-                            <a href="#contact" class="footer__link">ContactMe</a>
-                        </li>
-                    </ul>
-                   <div class="footer__socials">
-                    <a href="https://www.linkedin.com/in/madhankumar-karthikeyan/" target="_blank"  class="footer__social">
-                        <i class="uil uil-linkedin-alt"></i>
-                    </a>
-
-                    <a href="https://github.com/madhannmady/"  class="footer__social">
-                        <i class="uil uil-github-alt"></i>
-                    </a>
-
-                    <a href="https://dribbble.com/Madhannmady/"   class="footer__social">
-                        <i class="uil uil-dribbble"></i>
-                    </a>
-                </div>
-
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="12"
+                    y="18"
+                    href="assets/images/pic1.png"
+                  />
+                </g>
+              </svg>
             </div>
-            <p class="footer__copy">&#169; Madhan Kumar. All rights reserved</p>
-             </div>
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Madhan</h1>
+              <h3 class="home__subtitle">Tech enthusiast</h3>
+              <p class="home__description">
+                I'm a frontend developer who's just getting started on this
+                exciting journey. While I may be a beginner, I'm driven by my
+                love for design and my eagerness to create sleek and
+                user-friendly interfaces.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">Intro</span>
+
+        <div class="about__container container grid">
+          <img src="assets/images/pic3.png" alt="" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description">
+              I am currently pursuing a bachelor's degree in Computer Science,
+              where I have developed a strong passion for frontend development,
+              especially in UI/UX design. I take great joy in creating visually
+              appealing interfaces, which not only fuels my creativity but also
+              keeps me energized and eager to learn more. As a newcomer to the
+              field, my enthusiasm for continuous learning drives my growth and
+              excitement in this ever-evolving domain.
+            </p>
+
+            <div class="about__buttons">
+              <a
+                download=""
+                href="assets/pdf/Madhan_kumar_Resume.pdf"
+                class="button button--flex"
+              >
+                Download Resume<i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== SKILLS-1====================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Frontend developer</h1>
+                  <span class="skills__subtitle">Explorer</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills_name">HTML</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills_name">css</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills_name">JavaScript</h3>
+                    <span class="skills__number">20%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills_name">React</h3>
+                    <span class="skills__number">40%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__react"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== SKILLS-2====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-swatchbook skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Designer</h1>
+                  <span class="skills__subtitle">Junior</span>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills_name">Figma</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__figma"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My Personal Journey</span>
+
+        <div class="qualification__container container">
+          <div class="qualification__toggle">
+            <i
+              class="uil uil-graduation-cap qualification__toggle-icon"
+              id="toggle-education-icon"
+            ></i>
+            <label class="qualification__toggle-switch">
+              <input type="checkbox" id="qualification-toggle-checkbox" />
+              <span class="qualification__toggle-slider"></span>
+            </label>
+            <i
+              class="uil uil-briefcase-alt qualification__toggle-icon"
+              id="toggle-experience-icon"
+            ></i>
+          </div>
+
+          <div class="qualification__sections">
+            <div
+              class="qualification__content qualification__content-active"
+              data-content
+              id="education"
+            >
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Bachelor's in Computer Science
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >Panimalar Institute of Technology - Chennai</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> 2021-2025
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">HSC</h3>
+                  <span class="qualification__subtitle"
+                    >Sunbeam School - Vellore</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> 2020-2021
+                  </div>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">SSLC</h3>
+                  <span class="qualification__subtitle"
+                    >Namakkal Teachers Vidyashram - Vellore</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> 2018-2019
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qualification__content" data-content id="experience">
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">
+                    Software Development Trainee
+                  </h3>
+                  <span class="qualification__subtitle"
+                    >TANGEDCO - Chennai</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> Jul 2024 - Aug 2024
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">UI/UX Design Intern</h3>
+                  <span class="qualification__subtitle"
+                    >Hinduja Tech Limited - Chennai</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i> Jul 2023
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Hobbies</h2>
+        <span class="section__subtitle">What I do</span>
+
+        <div class="services__container container grid">
+          <!--==================== SERVICES 1 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-web-grid services__icon"></i>
+              <h3 class="services__title">
+                UI/UX <br />
+                design
+              </h3>
+            </div>
+
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__model">
+              <div class="services__model-content">
+                <h4 class="services__model-title">
+                  UI/UX <br />
+                  design
+                </h4>
+                <i class="uil uil-times services__model-close"></i>
+
+                <ul class="services__model-services grid">
+                  <li class="services__model-service">
+                    <i class="uil uil-check-circle services__model-icon"></i>
+                    <p>
+                      I have a passion for creating visually appealing and
+                      user-friendly designs.
+                    </p>
+                  </li>
+
+                  <li class="services__model-service">
+                    <i class="uil uil-check-circle services__model-icon"></i>
+                    <p>
+                      I believe in putting the user's needs first to create
+                      intuitive and engaging interfaces.
+                    </p>
+                  </li>
+
+                  <li class="services__model-service">
+                    <i class="uil uil-check-circle services__model-icon"></i>
+                    <p>
+                      My creativity gives me a hand , eventhough I'm a beginner.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SERVICES 2 ====================-->
+          <div class="services__content">
+            <div>
+              <i class="uil uil-arrow services__icon"></i>
+              <h3 class="services__title">
+                Frontend<br />
+                Developer
+              </h3>
+            </div>
+
+            <span
+              class="button button--flex button--small button--link services__button"
+            >
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__model">
+              <div class="services__model-content">
+                <h4 class="services__model-title">
+                  Frontend<br />
+                  Developer
+                </h4>
+                <i class="uil uil-times services__model-close"></i>
+
+                <ul class="services__model-services grid">
+                  <li class="services__model-service">
+                    <i class="uil uil-check-circle services__model-icon"></i>
+                    <p>
+                      Passionate about creating visually appealing and
+                      user-friendly websites.
+                    </p>
+                  </li>
+
+                  <li class="services__model-service">
+                    <i class="uil uil-check-circle services__model-icon"></i>
+                    <p>
+                      Keen interest in the latest frontend technologies and
+                      trends.
+                    </p>
+                  </li>
+
+                  <li class="services__model-service">
+                    <i class="uil uil-check-circle services__model-icon"></i>
+                    <p>
+                      Strong attention to detail and ability to work
+                      collaboratively in a team environment.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <!-- first portfolio -->
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/images/portfolio1.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Yoom</h3>
+                <p class="portfolio__description">
+                  Yoom is a clone mockup of a video calling application called
+                  zoom, where users can able to create instant meetings,even
+                  schedule meetings and more
+                </p>
+                <a
+                  href="https://ai-summarizer-mady.vercel.app/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/images/portfolio2.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">UI/UX Website</h3>
+                <p class="portfolio__description">
+                  A simple anna university website to emphasize my UI/UX Skills
+                  , thanks to Aceternity ui
+                </p>
+                <a
+                  href="https://anna-university-simple.vercel.app/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/images/portfolio3.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Glisten AI</h3>
+                <p class="portfolio__description">
+                  An UI/UX Design website with some cool animations ,developed
+                  using GSAP Library
+                </p>
+                <a
+                  href="https://glisten-mady.vercel.app/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 4====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/images/portfolio4.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">AI-Summarizer</h3>
+                <p class="portfolio__description">
+                  Sumz is an open-source article summarizer that transforms
+                  lengthy "blah-blah" articles into clear and concise summaries.
+                </p>
+                <a
+                  href="https://glisten-mady.vercel.app/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div
+          class="section__title"
+          style="text-align: center; font-weight: bold; margin: 100px 0 30px"
+        >
+          UI Projects
+        </div>
+
+        <!-- second profile -->
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/images/p1.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Lions International</h3>
+                <p class="portfolio__description">
+                  A bold and compassionate design that combines impactful
+                  visuals with dynamic layout, highlighting the organization's
+                  mission with striking clarity.
+                </p>
+                <a
+                  href="https://www.figma.com/design/MbKUMLHqM0T4hIjmAgNjgn/Lions-club-International?node-id=1-2&t=e2PV2QGRtIGVMGUr-1/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/images/p2.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Job Portal</h3>
+                <p class="portfolio__description">
+                  A clean, modern interface with intuitive navigation, offering
+                  a seamless and engaging job search experience.
+                </p>
+                <a
+                  href="https://www.figma.com/design/N3LnxxK69WkvgMPicR0rZa/JapaneseJobDesign?node-id=3-3&t=AN3rlhQG8fPEkwKr-1/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/images/p3.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">IRCTC Re-Work</h3>
+                <p class="portfolio__description">
+                  A vibrant and user-friendly design that merges tradition with
+                  modernity, making the booking process straightforward and
+                  visually appealing.
+                </p>
+                <a
+                  href="https://www.figma.com/design/RqP0JTkJze7Mez4CEJs9yk/IRCTC-Re-Design?node-id=3-3&t=r8Eyj2NYJqEuY9jk-1/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 4====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/images/p4.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Wanderlust Trips</h3>
+                <p class="portfolio__description">
+                  A vibrant and immersive design that seamlessly blends
+                  adventure with functionality, inviting users to explore with
+                  intuitive navigation and visually captivating elements.
+                </p>
+                <a
+                  href="https://www.figma.com/design/OsQclE5WZPOU0Q6LBBIpk2/Wanderlust-Trips?node-id=0-1&t=4PdllvdkiBhEK7an-1/"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== PROJECT IN MIND ====================-->
+      <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">Let us learn together</h2>
+              <p class="project__description">
+                I really believe that when we learn and work together as a team,
+                we all gain so much more. So, if you ever have any ideas or just
+                want to chat, feel free to reach out! I'm always up for sharing
+                thoughts and learning from each other.
+              </p>
+              <a href="#contact" class="button button--flex button--white">
+                Contact Me
+                <i class="uil uil-message project__icon button__icon"></i>
+              </a>
+            </div>
+
+            <img src="assets/images/pic2.png" alt="" class="project__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <a
+            href="mailto:madhankumark763@gmail.com"
+            class="contact__information contact__link-container"
+          >
+            <i class="uil uil-envelope contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">madhankumark763@gmail.com</span>
+            </div>
+          </a>
+
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">Chennai</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Madhan Kumar</h1>
+            <span class="footer__subtitle"> &nbsp Tech enthusiast</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#services" class="footer__link">Services</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="footer__link">ContactMe</a>
+            </li>
+          </ul>
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/madhankumar-karthikeyan/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+
+            <a href="https://github.com/madhannmady/" class="footer__social">
+              <i class="uil uil-github-alt"></i>
+            </a>
+
+            <a href="https://dribbble.com/Madhannmady/" class="footer__social">
+              <i class="uil uil-dribbble"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copy">&#169; Madhan Kumar. All rights reserved</p>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
