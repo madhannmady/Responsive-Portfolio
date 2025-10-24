@@ -228,3 +228,44 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== TYPING ANIMATION ====================*/
+const texts = [
+  "Tech Enthusiast",
+  "UI/UX Designer",
+  "Java Full Stack Developer",
+];
+const typingSpeed = 100;
+const erasingSpeed = 60;
+const delayBetween = 1500;
+
+const textElement = document.getElementById("typing-text");
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const currentText = texts[textIndex];
+
+  if (!isDeleting) {
+    textElement.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === currentText.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, delayBetween);
+      return;
+    }
+  } else {
+    textElement.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+    }
+  }
+  setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(typeEffect, 500);
+});
